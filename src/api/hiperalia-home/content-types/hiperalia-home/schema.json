@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hiperalia_homes",
+  "info": {
+    "singularName": "hiperalia-home",
+    "pluralName": "hiperalia-homes",
+    "displayName": "Hiperalia.Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BannerLeft": {
+      "type": "component",
+      "component": "home.banner-left",
+      "repeatable": true
+    }
+  }
+}
