@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_home_hiperalia_infos",
+  "info": {
+    "displayName": "hiperalia_info"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "blocks"
+    },
+    "subtitulo_1": {
+      "type": "blocks"
+    },
+    "subtitulo_2": {
+      "type": "blocks"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

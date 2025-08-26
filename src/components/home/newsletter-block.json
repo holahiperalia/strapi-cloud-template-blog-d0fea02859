@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_newsletter_blocks",
+  "info": {
+    "displayName": "newsletter_block"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "blocks"
+    },
+    "subtitulo": {
+      "type": "blocks"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

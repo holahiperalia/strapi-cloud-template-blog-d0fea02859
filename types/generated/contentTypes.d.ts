@@ -373,28 +373,43 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiHiperaliaHomeHiperaliaHome
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'hiperalia_homes';
+export interface ApiHomeHome extends Struct.SingleTypeSchema {
+  collectionName: 'homes';
   info: {
-    displayName: 'Hiperalia.Home';
-    pluralName: 'hiperalia-homes';
-    singularName: 'hiperalia-home';
+    displayName: 'Home';
+    pluralName: 'homes';
+    singularName: 'home';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    BannerLeft: Schema.Attribute.Component<'home.banner-left', true>;
+    Banner: Schema.Attribute.Component<'home.banner-item', true>;
+    Banner2: Schema.Attribute.Component<'home.banner-item', false>;
+    Categorias_Recomendadas: Schema.Attribute.Component<
+      'home.recommended-category-item',
+      true
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Hiperalia_Info: Schema.Attribute.Component<'home.hiperalia-info', false>;
+    Info_Cards: Schema.Attribute.Component<'home.info-card', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 3;
+          min: 3;
+        },
+        number
+      >;
+    Lo_Mas_Vendido: Schema.Attribute.Component<
+      'home.lo-mas-vendido-section',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::hiperalia-home.hiperalia-home'
-    > &
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
       Schema.Attribute.Private;
+    Newsletter: Schema.Attribute.Component<'home.newsletter-block', false>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -911,7 +926,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::hiperalia-home.hiperalia-home': ApiHiperaliaHomeHiperaliaHome;
+      'api::home.home': ApiHomeHome;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Banner": {
+      "type": "component",
+      "component": "home.banner-item",
+      "repeatable": true
+    },
+    "Banner2": {
+      "type": "component",
+      "component": "home.banner-item",
+      "repeatable": false
+    },
+    "Categorias_Recomendadas": {
+      "type": "component",
+      "component": "home.recommended-category-item",
+      "repeatable": true
+    },
+    "Lo_Mas_Vendido": {
+      "type": "component",
+      "component": "home.lo-mas-vendido-section",
+      "repeatable": false
+    },
+    "Newsletter": {
+      "type": "component",
+      "component": "home.newsletter-block",
+      "repeatable": false
+    },
+    "Info_Cards": {
+      "type": "component",
+      "component": "home.info-card",
+      "repeatable": true,
+      "max": 3,
+      "min": 3
+    },
+    "Hiperalia_Info": {
+      "type": "component",
+      "component": "home.hiperalia-info",
+      "repeatable": false
+    }
+  }
+}
