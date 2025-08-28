@@ -9,10 +9,10 @@
       "type": "string"
     },
     "informacion_nutricional": {
-      "type": "richtext"
+      "type": "blocks"
     },
     "ingredientes": {
-      "type": "richtext"
+      "type": "blocks"
     }
   },
   "config": {}
