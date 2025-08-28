@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_header_descuentos",
+  "info": {
+    "displayName": "Descuento"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "richtext"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_recetas_pasos",
+  "info": {
+    "displayName": "Paso"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

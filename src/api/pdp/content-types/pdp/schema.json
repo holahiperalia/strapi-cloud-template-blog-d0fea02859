@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pdps",
+  "info": {
+    "singularName": "pdp",
+    "pluralName": "pdps",
+    "displayName": "PDP"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "campos_principales": {
+      "type": "component",
+      "component": "pdp.campos-principales",
+      "repeatable": false
+    },
+    "otros_clientes_tambien_compraron": {
+      "type": "component",
+      "component": "pdp.otros-clientes-compraron",
+      "repeatable": false
+    }
+  }
+}

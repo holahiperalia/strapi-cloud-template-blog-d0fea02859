@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_header_descuento_categorias",
+  "info": {
+    "displayName": "Descuento_Categoria"
+  },
+  "options": {},
+  "attributes": {
+    "id_categoria_prestashop": {
+      "type": "integer"
+    },
+    "descuentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.descuento"
+    }
+  },
+  "config": {}
+}

@@ -11,7 +11,17 @@
     "subtitulo": {
       "type": "blocks"
     },
-    "imagen": {
+    "imagen_background": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imagen_top": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

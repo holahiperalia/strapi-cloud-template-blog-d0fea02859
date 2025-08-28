@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_recetas_campos_detalles",
+  "info": {
+    "displayName": "Campos Detalle"
+  },
+  "options": {},
+  "attributes": {
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recetas.ingrediente"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recetas.paso"
+    },
+    "tips": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

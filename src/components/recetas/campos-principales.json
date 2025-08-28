@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_recetas_campos_principales",
+  "info": {
+    "displayName": "Campos Principales"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Platos principales",
+        "Entrantes",
+        "Postres",
+        "Bebidas",
+        "Sopas",
+        "Ensaladas",
+        "Panes",
+        "Salsas"
+      ]
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Fácil",
+        "Intermedio",
+        "Difícil"
+      ],
+      "required": true
+    },
+    "time": {
+      "type": "string"
+    },
+    "servings": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  },
+  "config": {}
+}

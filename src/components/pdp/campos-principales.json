@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_pdp_campos_principales",
+  "info": {
+    "displayName": "Campos Principales PDP"
+  },
+  "options": {},
+  "attributes": {
+    "id_producto_prestashop": {
+      "type": "string"
+    },
+    "informacion_nutricional": {
+      "type": "richtext"
+    },
+    "ingredientes": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}
