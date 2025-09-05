@@ -1,17 +1,17 @@
 {
   "collectionName": "components_home_lo_mas_vendido_sections",
   "info": {
-    "displayName": "lo_mas_vendido_section"
+    "displayName": "Seccion Lo más vendido"
   },
   "options": {},
   "attributes": {
-    "titulo_seccion": {
+    "Titulo_Seccion": {
       "type": "blocks"
     },
-    "productos": {
+    "Productos": {
       "type": "component",
-      "repeatable": true,
-      "component": "home.product-card"
+      "component": "home.product-card",
+      "repeatable": true
     }
   },
   "config": {}

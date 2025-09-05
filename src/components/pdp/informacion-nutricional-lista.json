@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_pdp_informacion_nutricional_listas",
+  "info": {
+    "displayName": "Informacion Nutricional Lista"
+  },
+  "options": {},
+  "attributes": {
+    "Item": {
+      "type": "text",
+      "regex": "^#([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})$í"
+    },
+    "Valor": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

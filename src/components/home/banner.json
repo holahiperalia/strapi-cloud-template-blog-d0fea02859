@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "titulo": {
+    "Banner": {
       "type": "component",
       "component": "home.banner-item",
       "repeatable": false

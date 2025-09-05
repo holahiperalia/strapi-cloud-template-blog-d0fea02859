@@ -5,17 +5,17 @@
   },
   "options": {},
   "attributes": {
-    "ingredients": {
+    "Ingredientes": {
       "type": "component",
-      "repeatable": true,
-      "component": "recetas.ingrediente"
+      "component": "recetas.ingrediente",
+      "repeatable": true
     },
-    "steps": {
+    "Pasos": {
       "type": "component",
-      "repeatable": true,
-      "component": "recetas.paso"
+      "component": "recetas.paso",
+      "repeatable": true
     },
-    "tips": {
+    "Tips": {
       "type": "richtext"
     }
   },

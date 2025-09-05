@@ -1,14 +1,14 @@
 {
   "collectionName": "components_home_recommended_category_items",
   "info": {
-    "displayName": "recommended_category_item"
+    "displayName": "Categorias Recomendadas Item"
   },
   "options": {},
   "attributes": {
-    "titulo": {
+    "Titulo": {
       "type": "blocks"
     },
-    "imagen_background": {
+    "Imagen_Fondo": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -18,7 +18,7 @@
         "audios"
       ]
     },
-    "imagen_top": {
+    "Imagen_Superior": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -28,7 +28,7 @@
         "audios"
       ]
     },
-    "background_color": {
+    "Color_Fondo_Hex": {
       "type": "string",
       "regex": "^#([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})$"
     }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_pdp_preguntas_frecuentes_listas",
+  "info": {
+    "displayName": "Preguntas Frecuentes Lista"
+  },
+  "options": {},
+  "attributes": {
+    "Pregunta": {
+      "type": "text"
+    },
+    "Respuesta": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

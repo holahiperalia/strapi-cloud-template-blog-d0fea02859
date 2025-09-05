@@ -1,11 +1,11 @@
 {
   "collectionName": "components_home_categoria_recomendads",
   "info": {
-    "displayName": "Categoria Recomendad"
+    "displayName": "Categoria Recomendas"
   },
   "options": {},
   "attributes": {
-    "recommended_category_item": {
+    "Item_Categoria_Recomendada": {
       "type": "component",
       "component": "home.recommended-category-item",
       "repeatable": false

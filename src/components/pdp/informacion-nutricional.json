@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pdp_informacion_nutricionals",
+  "info": {
+    "displayName": "Informacion Nutricional"
+  },
+  "options": {},
+  "attributes": {
+    "Informacion_Nutricional": {
+      "type": "component",
+      "component": "pdp.informacion-nutricional-lista",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pdp_preguntas_frecuentes",
+  "info": {
+    "displayName": "Preguntas Frecuentes"
+  },
+  "options": {},
+  "attributes": {
+    "Preguntas_Frecuentes": {
+      "type": "component",
+      "component": "pdp.preguntas-frecuentes-lista",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

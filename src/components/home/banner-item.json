@@ -1,17 +1,17 @@
 {
   "collectionName": "components_home_banner_items",
   "info": {
-    "displayName": "banner_item"
+    "displayName": "Banner Item"
   },
   "options": {},
   "attributes": {
-    "titulo": {
+    "Titulo": {
       "type": "blocks"
     },
-    "subtitulo": {
+    "Subtitulo": {
       "type": "blocks"
     },
-    "imagen_background": {
+    "Imagen_Fondo": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -21,7 +21,7 @@
         "audios"
       ]
     },
-    "imagen_top": {
+    "Imagen_Superior": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -31,7 +31,7 @@
         "audios"
       ]
     },
-    "url_boton": {
+    "Url_boton": {
       "type": "string"
     }
   },

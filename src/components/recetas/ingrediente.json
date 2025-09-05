@@ -5,16 +5,16 @@
   },
   "options": {},
   "attributes": {
-    "name": {
+    "Nombre": {
       "type": "string"
     },
-    "quantity": {
+    "Cantidad": {
       "type": "string"
     },
-    "note": {
+    "Nota": {
       "type": "text"
     },
-    "section": {
+    "Seccion": {
       "type": "string"
     }
   },

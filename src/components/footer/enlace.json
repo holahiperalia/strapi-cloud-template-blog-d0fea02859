@@ -5,13 +5,13 @@
   },
   "options": {},
   "attributes": {
-    "titulo_grupo": {
+    "Titulo_del_Grupo": {
       "type": "string"
     },
     "items": {
       "type": "component",
-      "repeatable": true,
-      "component": "footer.item"
+      "component": "footer.item",
+      "repeatable": true
     }
   },
   "config": {}

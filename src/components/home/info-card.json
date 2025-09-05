@@ -1,17 +1,17 @@
 {
   "collectionName": "components_home_info_cards",
   "info": {
-    "displayName": "info_card"
+    "displayName": "Info Card"
   },
   "options": {},
   "attributes": {
-    "titulo": {
+    "Titulo": {
       "type": "blocks"
     },
-    "subtitulo": {
+    "Subtitulo": {
       "type": "blocks"
     },
-    "imagen": {
+    "Imagen": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

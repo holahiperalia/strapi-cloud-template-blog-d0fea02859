@@ -5,14 +5,29 @@
   },
   "options": {},
   "attributes": {
-    "id_producto_prestashop": {
+    "Prestashop_ID_Producto": {
       "type": "string"
     },
-    "informacion_nutricional": {
+    "Prestashop_Nombre_Producto": {
+      "type": "text"
+    },
+    "Informacion_Nutricional_Lista": {
+      "type": "component",
+      "component": "pdp.informacion-nutricional-lista",
+      "repeatable": true
+    },
+    "Ingredientes": {
       "type": "blocks"
     },
-    "ingredientes": {
-      "type": "blocks"
+    "Otros_Clientes_Tambien_Compraron": {
+      "type": "component",
+      "component": "pdp.otros-clientes-compraron",
+      "repeatable": true
+    },
+    "Preguntas_Frecuentes": {
+      "type": "component",
+      "component": "pdp.preguntas-frecuentes",
+      "repeatable": true
     }
   },
   "config": {}

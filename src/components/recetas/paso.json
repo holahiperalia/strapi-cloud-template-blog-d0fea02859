@@ -5,10 +5,10 @@
   },
   "options": {},
   "attributes": {
-    "order": {
+    "Orden": {
       "type": "integer"
     },
-    "content": {
+    "Contenido": {
       "type": "richtext"
     }
   },

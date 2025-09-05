@@ -7,7 +7,7 @@ export interface FooterEnlace extends Struct.ComponentSchema {
   };
   attributes: {
     items: Schema.Attribute.Component<'footer.item', true>;
-    titulo_grupo: Schema.Attribute.String;
+    Titulo_del_Grupo: Schema.Attribute.String;
   };
 }
 
@@ -17,8 +17,8 @@ export interface FooterItem extends Struct.ComponentSchema {
     displayName: 'Item';
   };
   attributes: {
-    texto: Schema.Attribute.String;
-    url: Schema.Attribute.String;
+    Texto: Schema.Attribute.String;
+    Url: Schema.Attribute.Text;
   };
 }
 
@@ -28,20 +28,21 @@ export interface HeaderDescuento extends Struct.ComponentSchema {
     displayName: 'Descuento';
   };
   attributes: {
-    imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    subtitulo: Schema.Attribute.String;
-    titulo: Schema.Attribute.RichText;
+    Imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Subtitulo: Schema.Attribute.Blocks;
+    Titulo: Schema.Attribute.Blocks;
   };
 }
 
 export interface HeaderDescuentoCategoria extends Struct.ComponentSchema {
   collectionName: 'components_header_descuento_categorias';
   info: {
-    displayName: 'Descuento_Categoria';
+    displayName: 'Descuento Categoria';
   };
   attributes: {
-    descuentos: Schema.Attribute.Component<'header.descuento', true>;
-    id_categoria_prestashop: Schema.Attribute.Integer;
+    Descuentos: Schema.Attribute.Component<'header.descuento', true>;
+    ID_Categoria_Prestashop: Schema.Attribute.Integer;
+    Nombre_Categoria_Prestashop: Schema.Attribute.Text;
   };
 }
 
@@ -51,35 +52,35 @@ export interface HomeBanner extends Struct.ComponentSchema {
     displayName: 'Banner';
   };
   attributes: {
-    titulo: Schema.Attribute.Component<'home.banner-item', false>;
+    Banner: Schema.Attribute.Component<'home.banner-item', false>;
   };
 }
 
 export interface HomeBannerItem extends Struct.ComponentSchema {
   collectionName: 'components_home_banner_items';
   info: {
-    displayName: 'banner_item';
+    displayName: 'Banner Item';
   };
   attributes: {
-    imagen_background: Schema.Attribute.Media<
+    Imagen_Fondo: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    imagen_top: Schema.Attribute.Media<
+    Imagen_Superior: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    subtitulo: Schema.Attribute.Blocks;
-    titulo: Schema.Attribute.Blocks;
-    url_boton: Schema.Attribute.String;
+    Subtitulo: Schema.Attribute.Blocks;
+    Titulo: Schema.Attribute.Blocks;
+    Url_boton: Schema.Attribute.String;
   };
 }
 
 export interface HomeCategoriaRecomendad extends Struct.ComponentSchema {
   collectionName: 'components_home_categoria_recomendads';
   info: {
-    displayName: 'Categoria Recomendad';
+    displayName: 'Categoria Recomendas';
   };
   attributes: {
-    recommended_category_item: Schema.Attribute.Component<
+    Item_Categoria_Recomendada: Schema.Attribute.Component<
       'home.recommended-category-item',
       false
     >;
@@ -89,76 +90,76 @@ export interface HomeCategoriaRecomendad extends Struct.ComponentSchema {
 export interface HomeHiperaliaInfo extends Struct.ComponentSchema {
   collectionName: 'components_home_hiperalia_infos';
   info: {
-    displayName: 'hiperalia_info';
+    displayName: 'Hiperalia Informacion';
   };
   attributes: {
-    imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    subtitulo_1: Schema.Attribute.Blocks;
-    subtitulo_2: Schema.Attribute.Blocks;
-    titulo: Schema.Attribute.Blocks;
+    Imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Parrafo_Derecha: Schema.Attribute.Blocks;
+    Parrafo_Izquierda: Schema.Attribute.Blocks;
+    Titulo: Schema.Attribute.Blocks;
   };
 }
 
 export interface HomeInfoCard extends Struct.ComponentSchema {
   collectionName: 'components_home_info_cards';
   info: {
-    displayName: 'info_card';
+    displayName: 'Info Card';
   };
   attributes: {
-    imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    subtitulo: Schema.Attribute.Blocks;
-    titulo: Schema.Attribute.Blocks;
+    Imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Subtitulo: Schema.Attribute.Blocks;
+    Titulo: Schema.Attribute.Blocks;
   };
 }
 
 export interface HomeLoMasVendidoSection extends Struct.ComponentSchema {
   collectionName: 'components_home_lo_mas_vendido_sections';
   info: {
-    displayName: 'lo_mas_vendido_section';
+    displayName: 'Seccion Lo m\u00E1s vendido';
   };
   attributes: {
-    productos: Schema.Attribute.Component<'home.product-card', true>;
-    titulo_seccion: Schema.Attribute.Blocks;
+    Productos: Schema.Attribute.Component<'home.product-card', true>;
+    Titulo_Seccion: Schema.Attribute.Blocks;
   };
 }
 
 export interface HomeNewsletterBlock extends Struct.ComponentSchema {
   collectionName: 'components_home_newsletter_blocks';
   info: {
-    displayName: 'newsletter_block';
+    displayName: 'Newsletter';
   };
   attributes: {
-    imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    subtitulo: Schema.Attribute.Blocks;
-    titulo: Schema.Attribute.Blocks;
+    Imagen: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Subtitulo: Schema.Attribute.Blocks;
+    Titulo: Schema.Attribute.Blocks;
   };
 }
 
 export interface HomeProductCard extends Struct.ComponentSchema {
   collectionName: 'components_home_product_cards';
   info: {
-    displayName: 'product_card';
+    displayName: 'Tarjeta de producto';
   };
   attributes: {
-    id_producto_prestashop: Schema.Attribute.Integer;
-    nombre_prestashop: Schema.Attribute.String;
+    Prestashop_ID_Producto: Schema.Attribute.Integer;
+    Prestashop_Nombre_Producto: Schema.Attribute.String;
   };
 }
 
 export interface HomeRecommendedCategoryItem extends Struct.ComponentSchema {
   collectionName: 'components_home_recommended_category_items';
   info: {
-    displayName: 'recommended_category_item';
+    displayName: 'Categorias Recomendadas Item';
   };
   attributes: {
-    background_color: Schema.Attribute.String;
-    imagen_background: Schema.Attribute.Media<
+    Color_Fondo_Hex: Schema.Attribute.String;
+    Imagen_Fondo: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    imagen_top: Schema.Attribute.Media<
+    Imagen_Superior: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    titulo: Schema.Attribute.Blocks;
+    Titulo: Schema.Attribute.Blocks;
   };
 }
 
@@ -168,9 +169,45 @@ export interface PdpCamposPrincipales extends Struct.ComponentSchema {
     displayName: 'Campos Principales PDP';
   };
   attributes: {
-    id_producto_prestashop: Schema.Attribute.String;
-    informacion_nutricional: Schema.Attribute.RichText;
-    ingredientes: Schema.Attribute.RichText;
+    Informacion_Nutricional_Lista: Schema.Attribute.Component<
+      'pdp.informacion-nutricional-lista',
+      true
+    >;
+    Ingredientes: Schema.Attribute.Blocks;
+    Otros_Clientes_Tambien_Compraron: Schema.Attribute.Component<
+      'pdp.otros-clientes-compraron',
+      true
+    >;
+    Preguntas_Frecuentes: Schema.Attribute.Component<
+      'pdp.preguntas-frecuentes',
+      true
+    >;
+    Prestashop_ID_Producto: Schema.Attribute.String;
+    Prestashop_Nombre_Producto: Schema.Attribute.Text;
+  };
+}
+
+export interface PdpInformacionNutricional extends Struct.ComponentSchema {
+  collectionName: 'components_pdp_informacion_nutricionals';
+  info: {
+    displayName: 'Informacion Nutricional';
+  };
+  attributes: {
+    Informacion_Nutricional: Schema.Attribute.Component<
+      'pdp.informacion-nutricional-lista',
+      true
+    >;
+  };
+}
+
+export interface PdpInformacionNutricionalLista extends Struct.ComponentSchema {
+  collectionName: 'components_pdp_informacion_nutricional_listas';
+  info: {
+    displayName: 'Informacion Nutricional Lista';
+  };
+  attributes: {
+    Item: Schema.Attribute.Text;
+    Valor: Schema.Attribute.Text;
   };
 }
 
@@ -180,8 +217,32 @@ export interface PdpOtrosClientesCompraron extends Struct.ComponentSchema {
     displayName: 'Otros Clientes Tambi\u00E9n Compraron';
   };
   attributes: {
-    productos: Schema.Attribute.Component<'home.product-card', true>;
-    titulo_seccion: Schema.Attribute.Blocks;
+    Productos: Schema.Attribute.Component<'home.product-card', true>;
+    Titulo_Seccion: Schema.Attribute.Blocks;
+  };
+}
+
+export interface PdpPreguntasFrecuentes extends Struct.ComponentSchema {
+  collectionName: 'components_pdp_preguntas_frecuentes';
+  info: {
+    displayName: 'Preguntas Frecuentes';
+  };
+  attributes: {
+    Preguntas_Frecuentes: Schema.Attribute.Component<
+      'pdp.preguntas-frecuentes-lista',
+      true
+    >;
+  };
+}
+
+export interface PdpPreguntasFrecuentesLista extends Struct.ComponentSchema {
+  collectionName: 'components_pdp_preguntas_frecuentes_listas';
+  info: {
+    displayName: 'Preguntas Frecuentes Lista';
+  };
+  attributes: {
+    Pregunta: Schema.Attribute.Text;
+    Respuesta: Schema.Attribute.Text;
   };
 }
 
@@ -191,9 +252,9 @@ export interface RecetasCamposDetalle extends Struct.ComponentSchema {
     displayName: 'Campos Detalle';
   };
   attributes: {
-    ingredients: Schema.Attribute.Component<'recetas.ingrediente', true>;
-    steps: Schema.Attribute.Component<'recetas.paso', true>;
-    tips: Schema.Attribute.RichText;
+    Ingredientes: Schema.Attribute.Component<'recetas.ingrediente', true>;
+    Pasos: Schema.Attribute.Component<'recetas.paso', true>;
+    Tips: Schema.Attribute.RichText;
   };
 }
 
@@ -249,10 +310,10 @@ export interface RecetasIngrediente extends Struct.ComponentSchema {
     displayName: 'Ingrediente';
   };
   attributes: {
-    name: Schema.Attribute.String;
-    note: Schema.Attribute.Text;
-    quantity: Schema.Attribute.String;
-    section: Schema.Attribute.String;
+    Cantidad: Schema.Attribute.String;
+    Nombre: Schema.Attribute.String;
+    Nota: Schema.Attribute.Text;
+    Seccion: Schema.Attribute.String;
   };
 }
 
@@ -262,8 +323,8 @@ export interface RecetasPaso extends Struct.ComponentSchema {
     displayName: 'Paso';
   };
   attributes: {
-    content: Schema.Attribute.RichText;
-    order: Schema.Attribute.Integer;
+    Contenido: Schema.Attribute.RichText;
+    Orden: Schema.Attribute.Integer;
   };
 }
 
@@ -284,7 +345,11 @@ declare module '@strapi/strapi' {
       'home.product-card': HomeProductCard;
       'home.recommended-category-item': HomeRecommendedCategoryItem;
       'pdp.campos-principales': PdpCamposPrincipales;
+      'pdp.informacion-nutricional': PdpInformacionNutricional;
+      'pdp.informacion-nutricional-lista': PdpInformacionNutricionalLista;
       'pdp.otros-clientes-compraron': PdpOtrosClientesCompraron;
+      'pdp.preguntas-frecuentes': PdpPreguntasFrecuentes;
+      'pdp.preguntas-frecuentes-lista': PdpPreguntasFrecuentesLista;
       'recetas.campos-detalle': RecetasCamposDetalle;
       'recetas.campos-principales': RecetasCamposPrincipales;
       'recetas.campos-seo': RecetasCamposSeo;

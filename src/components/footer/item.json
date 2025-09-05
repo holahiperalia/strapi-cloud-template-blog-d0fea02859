@@ -5,11 +5,11 @@
   },
   "options": {},
   "attributes": {
-    "texto": {
+    "Texto": {
       "type": "string"
     },
-    "url": {
-      "type": "string"
+    "Url": {
+      "type": "text"
     }
   },
   "config": {}

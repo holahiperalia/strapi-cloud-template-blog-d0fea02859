@@ -5,13 +5,13 @@
   },
   "options": {},
   "attributes": {
-    "titulo_seccion": {
+    "Titulo_Seccion": {
       "type": "blocks"
     },
-    "productos": {
+    "Productos": {
       "type": "component",
-      "repeatable": true,
-      "component": "home.product-card"
+      "component": "home.product-card",
+      "repeatable": true
     }
   },
   "config": {}

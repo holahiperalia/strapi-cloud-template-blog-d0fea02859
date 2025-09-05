@@ -1,14 +1,14 @@
 {
   "collectionName": "components_home_product_cards",
   "info": {
-    "displayName": "product_card"
+    "displayName": "Tarjeta de producto"
   },
   "options": {},
   "attributes": {
-    "id_producto_prestashop": {
+    "Prestashop_ID_Producto": {
       "type": "integer"
     },
-    "nombre_prestashop": {
+    "Prestashop_Nombre_Producto": {
       "type": "string"
     }
   },

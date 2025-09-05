@@ -5,13 +5,13 @@
   },
   "options": {},
   "attributes": {
-    "titulo": {
-      "type": "richtext"
+    "Titulo": {
+      "type": "blocks"
     },
-    "subtitulo": {
-      "type": "string"
+    "Subtitulo": {
+      "type": "blocks"
     },
-    "imagen": {
+    "Imagen": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
