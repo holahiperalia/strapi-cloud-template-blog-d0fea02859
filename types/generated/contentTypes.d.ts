@@ -440,8 +440,8 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Banner: Schema.Attribute.Component<'home.banner-item', true>;
-    Banner2: Schema.Attribute.Component<'home.banner-item', false>;
+    Banner_Derecha: Schema.Attribute.Component<'home.banner-item', false>;
+    Banner_Izquierda: Schema.Attribute.Component<'home.banner-item', true>;
     Categorias_Recomendadas: Schema.Attribute.Component<
       'home.recommended-category-item',
       true

@@ -11,12 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Banner": {
+    "Banner_Izquierda": {
       "type": "component",
       "component": "home.banner-item",
       "repeatable": true
     },
-    "Banner2": {
+    "Banner_Derecha": {
       "type": "component",
       "component": "home.banner-item",
       "repeatable": false

@@ -6,7 +6,7 @@ export interface FooterEnlace extends Struct.ComponentSchema {
     displayName: 'Enlace';
   };
   attributes: {
-    items: Schema.Attribute.Component<'footer.item', true>;
+    Items: Schema.Attribute.Component<'footer.item', true>;
     Titulo_del_Grupo: Schema.Attribute.String;
   };
 }

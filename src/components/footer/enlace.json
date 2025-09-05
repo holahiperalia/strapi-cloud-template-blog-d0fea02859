@@ -8,7 +8,7 @@
     "Titulo_del_Grupo": {
       "type": "string"
     },
-    "items": {
+    "Items": {
       "type": "component",
       "component": "footer.item",
       "repeatable": true
