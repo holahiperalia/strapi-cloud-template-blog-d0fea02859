@@ -31,7 +31,7 @@
       "component": "home.lo-mas-vendido-section",
       "repeatable": false
     },
-    "Newsletter_Seccion": {
+    "Newsletter": {
       "type": "component",
       "component": "home.newsletter-block",
       "repeatable": false
