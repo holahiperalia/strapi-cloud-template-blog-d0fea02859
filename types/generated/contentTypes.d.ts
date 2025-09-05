@@ -465,7 +465,10 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
       Schema.Attribute.Private;
-    Newsletter: Schema.Attribute.Component<'home.newsletter-block', false>;
+    Newsletter_Seccion: Schema.Attribute.Component<
+      'home.newsletter-block',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
