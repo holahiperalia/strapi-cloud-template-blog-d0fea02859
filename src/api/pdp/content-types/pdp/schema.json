@@ -11,14 +11,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "campos_principales": {
+    "Campos_Principales": {
       "type": "component",
       "component": "pdp.campos-principales",
       "repeatable": false
     },
-    "otros_clientes_tambien_compraron": {
+    "Otros_Clientes_Tambien_Compraron": {
       "type": "component",
       "component": "pdp.otros-clientes-compraron",
+      "repeatable": false
+    },
+    "Preguntas_Frecuentes": {
+      "type": "component",
+      "component": "pdp.preguntas-frecuentes",
       "repeatable": false
     }
   }

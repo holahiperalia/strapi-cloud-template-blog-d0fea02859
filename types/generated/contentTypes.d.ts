@@ -484,7 +484,7 @@ export interface ApiPdpPdp extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    campos_principales: Schema.Attribute.Component<
+    Campos_Principales: Schema.Attribute.Component<
       'pdp.campos-principales',
       false
     >;
@@ -494,8 +494,12 @@ export interface ApiPdpPdp extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::pdp.pdp'> &
       Schema.Attribute.Private;
-    otros_clientes_tambien_compraron: Schema.Attribute.Component<
+    Otros_Clientes_Tambien_Compraron: Schema.Attribute.Component<
       'pdp.otros-clientes-compraron',
+      false
+    >;
+    Preguntas_Frecuentes: Schema.Attribute.Component<
+      'pdp.preguntas-frecuentes',
       false
     >;
     publishedAt: Schema.Attribute.DateTime;

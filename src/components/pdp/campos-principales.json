@@ -18,16 +18,6 @@
     },
     "Ingredientes": {
       "type": "blocks"
-    },
-    "Otros_Clientes_Tambien_Compraron": {
-      "type": "component",
-      "component": "pdp.otros-clientes-compraron",
-      "repeatable": true
-    },
-    "Preguntas_Frecuentes": {
-      "type": "component",
-      "component": "pdp.preguntas-frecuentes",
-      "repeatable": true
     }
   },
   "config": {}

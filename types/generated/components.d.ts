@@ -174,14 +174,6 @@ export interface PdpCamposPrincipales extends Struct.ComponentSchema {
       true
     >;
     Ingredientes: Schema.Attribute.Blocks;
-    Otros_Clientes_Tambien_Compraron: Schema.Attribute.Component<
-      'pdp.otros-clientes-compraron',
-      true
-    >;
-    Preguntas_Frecuentes: Schema.Attribute.Component<
-      'pdp.preguntas-frecuentes',
-      true
-    >;
     Prestashop_ID_Producto: Schema.Attribute.String;
     Prestashop_Nombre_Producto: Schema.Attribute.Text;
   };
